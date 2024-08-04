@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Logo de la aplicación -->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="92dp"
+        android:layout_height="69dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/logo" />
+
+    <!-- Campo de entrada de contraseña -->
+
+
+    <!-- Campo de entrada de contraseña -->
+    <EditText
+        android:id="@+id/etCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgLogo"
+        android:layout_marginTop="16dp"
+        android:hint="Ingrese un Email"
+        android:inputType="text"
+        />
+
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etCorreo"
+        android:layout_marginTop="16dp"
+        android:hint="Cree Una contraseña"
+        android:inputType="textPassword"
+        android:enabled="true"
+        />
+
+    <EditText
+        android:id="@+id/etRepetirPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPassword"
+        android:layout_marginTop="16dp"
+        android:hint="Repita la contraseña"
+        android:inputType="textPassword"
+        android:enabled="true"
+        />
+
+
+    <Button
+        android:id="@+id/btnRegistrarme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etRepetirPassword"
+        android:layout_marginTop="15dp"
+        android:text="Registrarme"
+        android:textAllCaps="false"
+        android:enabled="true"
+        />
+
+    <Button
+        android:id="@+id/btnIralogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRegistrarme"
+        android:layout_marginTop="15dp"
+        android:text="Ir a Login"
+        android:textAllCaps="false"
+        android:enabled="true"
+        />
+
+
+</RelativeLayout>

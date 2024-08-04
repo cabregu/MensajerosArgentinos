@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Logo de la aplicación -->
+    <TextView
+        android:id="@+id/tvUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Usuario"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        />
+
+    <Switch
+        android:id="@+id/swclima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvUsuario"
+        android:layout_marginTop="1dp"
+        android:text="Activar día lluvioso?"
+        android:checked="false"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="70dp"
+        android:layout_height="31dp"
+        android:layout_below="@id/swclima"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/logo" />
+
+
+    <Button
+        android:id="@+id/btnCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLogo"
+        android:layout_marginTop="1dp"
+        android:text="Cliente"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnNoCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCliente"
+        android:layout_marginTop="1dp"
+        android:text="No Cliente"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnCrearCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnNoCliente"
+        android:layout_marginTop="1dp"
+        android:text="Crear Cliente"
+        android:textAllCaps="false" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewViajes"
+        android:layout_width="348dp"
+        android:layout_height="445dp"
+        android:layout_below="@id/btnCrearCliente"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="43dp"
+        android:textSize="20sp" />
+
+</RelativeLayout>

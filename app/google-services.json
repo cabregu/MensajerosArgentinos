@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "396566940037",
+    "project_id": "mensajeros-938cf",
+    "storage_bucket": "mensajeros-938cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:396566940037:android:ca55d7a3184026bea5dcec",
+        "android_client_info": {
+          "package_name": "com.logicamente.mensajerosargentinos"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYGbGSLMWCS3iCSOTgLa7h4_tedt6SBs4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
