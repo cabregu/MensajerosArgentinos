@@ -24,6 +24,7 @@ public class MainActivity_Home extends AppCompatActivity {
         tvUsuario = findViewById(R.id.tvUsuario);
         btnCrearCliente = findViewById(R.id.btnCrearCliente); // Asegúrate de que este ID es correcto
 
+
         FirebaseUser currentUser = mAuth.getCurrentUser();
         if (currentUser != null) {
             String email = currentUser.getEmail();
